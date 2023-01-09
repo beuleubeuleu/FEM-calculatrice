@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex  {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+html {
+    background: gray;
+    font-family: sans-serif;
+}
+
+.display {
+    width: 500px;
+    height: 90px;
+    margin: 10rem auto 1rem;
+    background: #333333;
+    border-radius: 5px;
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.display p {
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+}
+
+.buttons button {
+    border:none;
+    border-radius: 5px;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.buttons {
+    width: 500px;
+    height: 500px;
+    margin:auto;
+
+    grid-gap: 1rem;
+
+    grid-template-areas:
+    "sept huit neuf del"
+    "quatre cinq six plus"
+    "un deux trois moins"
+    "point zero division x"
+    "reset reset egal egal";
+}
+
+.bouton7 {
+    grid-area: sept;
+}
+.bouton8 {
+    grid-area: huit;
+}
+.bouton9 {
+    grid-area: neuf;
+}
+.boutondel {
+    grid-area: del;
+}
+.boutonreset {
+    grid-area: reset;
+}
+.boutonegal {
+    grid-area: egal;
+}
